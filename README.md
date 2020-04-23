@@ -1,2 +1,2 @@
 # Bomcom-APPS
-This is my project 1
+Project 1
