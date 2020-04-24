@@ -45,7 +45,7 @@ a {
 .container {
   max-width: 1150px;
   margin: auto;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   overflow: hidden;
 }
 
@@ -74,7 +74,7 @@ a {
   color: #fff;
 }
 
-.btn-plus {
+.btn-circle {
   padding: 0;
   display: inline-block;
   background-color: #ff963a;
@@ -84,7 +84,7 @@ a {
   width: 35px;
   display: grid;
   place-content: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 /***** HOME PAGE / FULL PAGE *****/
@@ -220,11 +220,11 @@ a {
 #games {
   height: 80vh;
   background: #f35526;
-  box-shadow: 0 8px 1px #a7230c;
+  box-shadow: 0 5px 1px #a7230c;
   position: relative;
   z-index: 1;
   transform: skewY(3.6deg);
-  margin-top: -3rem;
+  margin-top: -5rem;
 }
 
 #games .container {
@@ -252,6 +252,7 @@ a {
   justify-content: center;
   padding-left: 2rem;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+  /* overflow: hidden; */
 }
 
 .games-card .outlinebutton {
@@ -295,7 +296,7 @@ a {
   display: flex;
   padding: 1rem;
   align-items: center;
-  margin-bottom: .1rem;
+  margin-bottom: 0.1rem;
 }
 
 .games-card .game img {
@@ -335,11 +336,11 @@ a {
 .science-content .science-btn {
   color: var(--second-main-color);
   font-size: 1.2rem;
-  padding: .7rem 1.2rem;
+  padding: 0.7rem 1.2rem;
   background: var(--light-color);
   border-radius: 15px;
   border: 2px solid #ffdcd5;
-  transition: all .5s linear;
+  transition: all 0.5s linear;
   margin: 1.5rem;
   cursor: pointer;
   margin-bottom: 23%;
@@ -353,7 +354,7 @@ a {
   color: var(--secondary-color);
   font-size: 1.2rem;
   font-weight: 800;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .science-content h2 {
@@ -364,14 +365,21 @@ a {
 .science-content p:nth-child(4) {
   padding-right: 30%;
   margin-bottom: 1.5rem;
-  margin-left: .3rem;
+  margin-left: 0.3rem;
+  font-weight: 600;
 }
 
 .science-content .btn {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   box-shadow: inset 0 -10px 10px rgba(0, 0, 0, 0.3),
     inset 0 10px 10px rgba(255, 255, 255, 0.2), 0 10px 15px rgba(0, 0, 0, 0.3),
-    0 0 0 5px rgba(255, 255, 255, 0.15);
+    0 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.science-content .btn:hover {
+  box-shadow: inset 0 -10px 10px rgba(0, 0, 0, 0.3),
+    inset 0 10px 10px rgba(255, 255, 255, 0.2), 0 10px 15px rgba(0, 0, 0, 0.3),
+    0 0 0 7px rgba(0, 0, 0, 0.1);
 }
 
 .science-content .btn i {
@@ -384,7 +392,7 @@ a {
   height: 155vh;
   background-color: var(--main-color);
   z-index: -1;
-  margin-top: -3rem;
+  margin-top: -5rem;
 }
 
 #awards .container {
@@ -419,18 +427,18 @@ a {
 }
 
 #awards .reviews-content .review-card p:first-child {
-  font-size: .7rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   color: #fbde9c;
   font-weight: 800;
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
 }
 
 #awards .reviews-content .review-card p:nth-child(2) {
   line-height: 1.5;
-  margin-bottom: .6rem;
-
+  margin-bottom: 0.6rem;
+  font-weight: 600;
 }
 
 #awards .reviews-content .review-card p:nth-child(3) {
@@ -493,7 +501,7 @@ a {
 }
 
 #awards .reviews-content .review-btn a:last-child .fas {
-  padding-right: .09rem;
+  padding-right: 0.09rem;
 }
 
 #awards .btn-reviews {
@@ -505,7 +513,6 @@ a {
   padding-left: 1rem;
 }
 
-
 /********************************** NEWS SECTION **********************************/
 #news {
   position: relative;
@@ -514,9 +521,10 @@ a {
   background-color: var(--second-main-color);
   /* clip-path: polygon(0 calc(100% - 93vh), 100% 0, 100% 100%, 0 100%);
   margin-top: -7vh; */
-  box-shadow: 0 -8px 1px #a7230c;
+  box-shadow: 0 -5px 1px #a7230c;
   transform: skewY(-1.5deg);
   margin-top: -2rem;
+  margin-bottom: -2rem;
 }
 
 #news .container {
@@ -540,7 +548,7 @@ a {
 
 .news-button .n-btn {
   cursor: pointer;
-  padding: .85rem 1rem;
+  padding: 0.85rem 1rem;
   display: inline-block;
   border-radius: 30px;
   text-align: center;
@@ -552,13 +560,13 @@ a {
 }
 
 .news-button .n-btn:last-child {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .news-button .n-btn i {
   font-size: 1.5rem;
   margin-right: 1rem;
-  margin-left: .4rem;
+  margin-left: 0.4rem;
 }
 
 .news-button .news-outline-btn {
@@ -591,7 +599,7 @@ a {
 }
 
 #news .news-flex .news-content-grid p:first-child {
-  font-size: .7rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   color: #fae39f;
   font-weight: 800;
@@ -617,7 +625,7 @@ a {
 }
 
 #news .news-flex .news-content-grid .top-news::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 1.5rem;
   left: -1rem;
@@ -637,7 +645,7 @@ a {
   color: #ff8a23;
 }
 
-#news .news-flex .news-content-grid .top-news .btn-plus {
+#news .news-flex .news-content-grid .top-news .btn-circle {
   position: absolute;
   bottom: -4rem;
   left: 35%;
@@ -645,7 +653,7 @@ a {
   width: 50px;
 }
 
-#news .news-flex .news-content-grid .top-news .btn-plus:hover i {
+#news .news-flex .news-content-grid .top-news .btn-circle:hover i {
   animation: roro linear 1s infinite;
 }
 
@@ -672,4 +680,212 @@ a {
 
 #news .container .all-news-btn .btn i {
   margin-left: 1rem;
+}
+
+/********************************** CONTACT SECTION **********************************/
+#contact {
+  height: 120vh;
+  background: linear-gradient(0deg,
+      var(--main-color),
+      var(--second-main-color));
+}
+
+#contact .container {
+  height: 100%;
+  padding-top: 15%;
+  perspective: 1000px;
+}
+
+/* down card just for shap */
+#contact .contact-card {
+  padding-left: 3rem;
+  width: 90%;
+  height: 430px;
+  background: linear-gradient(45deg, var(--primary-color), #7c6eff);
+  border-radius: 25px;
+  transform: rotateX(-5deg) rotateY(-10deg) rotateZ(-2deg);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+  position: absolute;
+}
+
+/* up content card */
+#contact .contact-card-info {
+  position: absolute;
+  margin-left: 3rem;
+  padding-left: 3rem;
+  width: 90%;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact .contact-card-info .discord-info {
+  transform: unset;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#contact .contact-card-info .discord-info>div .join-discord {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+#contact .contact-card-info .discord-info>div .join-discord i {
+  font-size: 6rem;
+  margin-right: 3rem;
+}
+
+#contact .contact-card-info .discord-title {
+  font-size: 2.8rem;
+}
+
+#contact .discord-btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#contact .btn-discord i {
+  margin-right: 1rem;
+}
+
+/* mail card */
+#contact .contact-card-info .mail-card {
+  position: absolute;
+  height: 250px;
+  width: 450px;
+  background: var(--light-color);
+  border-radius: 25px;
+  right: 5rem;
+  bottom: -5rem;
+  color: var(--primary-color);
+  padding: 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+#contact .contact-card-info .mail-card h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+#contact .contact-card-info .mail-card .email-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#contact .contact-card-info .mail-card .btn {
+  font-size: 1.5rem;
+  height: 50px;
+  width: 50px;
+  box-shadow: inset 0 -10px 10px rgba(0, 0, 0, 0.3),
+    inset 0 10px 10px rgba(255, 255, 255, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+#contact .contact-card-info .mail-card .btn:hover {
+  box-shadow: inset 0 -10px 10px rgba(0, 0, 0, 0.3),
+    inset 0 10px 10px rgba(255, 255, 255, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 0 0 7px rgba(0, 0, 0, 0.15);
+}
+
+#email {
+  padding: 0.9rem;
+  border-radius: 30px;
+  border: 2px solid #e1e1e1;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  padding-left: 2rem;
+  margin-right: 1.3rem;
+  height: 55px;
+  transition: .3s;
+
+}
+
+#email::placeholder {
+  color: var(--primary-color);
+  opacity: 0.6;
+}
+
+#email:focus {
+  border: 2px solid #c7c7c7;
+}
+
+#contact .contact-card-info .contact-fly-img {
+  position: absolute;
+  right: 15%;
+  top: -25%;
+}
+
+#contact .contact-card-info .contact-fly-img img {
+  width: 300px;
+}
+
+/********************************** FOOOTER SECTION **********************************/
+#footer {
+  background: var(--main-color);
+  height: 25vh;
+}
+
+#footer .container {
+  height: 100%;
+}
+
+#footer .up-line {
+  width: 90%;
+  height: 5px;
+  background-color: #dd2b03;
+  border-radius: 30px;
+  margin: auto;
+  margin-bottom: 3rem;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2),
+    inset 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4.5rem;
+  padding-bottom: 2rem;
+}
+
+#footer .footer-grid p,
+#footer .footer-grid .footer-link {
+  color: #ffe678;
+  font-size: 0.7rem;
+}
+
+#footer .footer-grid .footer-link {
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#footer .footer-grid .footer-link:hover {
+  color: var(--secondary-color);
+}
+
+#footer .footer-grid p:first-child,
+#footer .footer-grid #creator {
+  opacity: 0.5;
+  text-align: start;
+}
+
+#footer .footer-grid #creator a {
+  color: #ffffff;
+  opacity: 1 !important;
+  border-bottom: 3px solid #eee;
 }

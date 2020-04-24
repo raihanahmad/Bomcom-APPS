@@ -1,0 +1,264 @@
+/********************************* HEADER *********************************/
+#navber {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-bottom: 1rem;
+  order: 1;
+}
+
+.logo img {
+  width: 220px;
+}
+
+#navber .social {
+  order: 2;
+  margin-bottom: 2rem;
+}
+
+#navber ul {
+  order: 3;
+}
+
+/* SHOWCASE */
+#showcase {
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-right: 30%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/******************************** GAMES SECTION ********************************/
+#games {
+  height: 43vh;
+}
+
+.games-card {
+  left: 3rem;
+  right: 4rem;
+  height: 555px;
+  padding-left: 1rem;
+}
+
+.games-card .game {
+  display: flex;
+  padding: .4rem 1rem;
+  align-items: center;
+  margin-bottom: 0.1rem;
+}
+
+.science-content .science-btn {
+  margin: 1rem;
+  margin-bottom: 15%;
+}
+
+/********************************* AWARDS SECTION **********************************/
+#awards {
+  height: 80vh;
+}
+
+#awards .container {
+  padding-top: 40%;
+}
+
+.reviews-content {
+  padding: 0 5rem;
+}
+
+/********************************** NEWS SECTION **********************************/
+#news {
+  height: 55vh;
+}
+
+#news .container {
+  transform: skewY(1.5deg);
+  padding: 15% 9% 11%;
+  height: 100%;
+}
+
+/********************************** CONTACT SECTION **********************************/
+#contact {
+  height: 60vh;
+}
+
+
+#contact .contact-card-info .contact-fly-img {
+  position: absolute;
+  right: 11%;
+  top: -25%;
+}
+
+/********************************** FOOOTER SECTION **********************************/
+#footer {
+  background: var(--main-color);
+  height: 15vh;
+  margin-top: -1rem;
+}
+
+
+
+
+/********************************** MEDIA FOR MOBILE PHONE **********************************/
+@media (max-width: 980px) {
+
+  /********************************* HEADER *********************************/
+  .logo {
+    margin-top: -1rem;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  #navber .social {
+    margin-bottom: 1.5rem;
+  }
+
+  /* SHOWCASE */
+  #showcase {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 30%;
+  }
+
+  #showcase .showcase-content p {
+    padding-right: 0rem;
+  }
+
+  /******************************** GAMES SECTION ********************************/
+  .games-card {
+    overflow: hidden;
+    left: 5rem;
+    right: 5rem;
+    height: 400px;
+  }
+
+  .science-card,
+  .science-content {
+    display: none;
+  }
+
+  .games-card .game {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    align-items: center;
+    margin-bottom: 0rem;
+  }
+
+  .games-card .game p {
+    margin-left: 0rem;
+  }
+
+  .games-card .games-card-flex {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .games-card .outlinebutton {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  /********************************* AWARDS SECTION **********************************/
+  #awards {
+    height: 90vh;
+  }
+
+  .reviews-content {
+    padding: 0 2rem;
+  }
+
+  /********************************** NEWS SECTION **********************************/
+  #news {
+    height: 100vh;
+  }
+
+  #news .container {
+    transform: skewY(1.5deg);
+    padding: 15% 9% 11%;
+    height: 100%;
+  }
+
+  #news .news-flex {
+    display: unset;
+  }
+
+  .news-button {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  /********************************** CONTACT SECTION **********************************/
+  #contact {
+    height: 70vh;
+  }
+
+  #contact .container {
+    padding-top: 25%;
+  }
+
+  /* down card just for shap */
+  #contact .contact-card {
+    height: 360px;
+  }
+
+  /* up content card */
+  #contact .contact-card-info {
+    margin-left: 1rem;
+    padding-left: 3rem;
+    height: 430px;
+    padding-bottom: 3rem;
+  }
+
+  #contact .contact-card-info .discord-info>div .join-discord {
+    display: unset;
+  }
+
+  #contact .contact-card-info .discord-title {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    margin-top: .4rem;
+  }
+
+  #contact .contact-card-info .discord-info>div .join-discord i {
+    font-size: 4rem;
+  }
+
+  #contact .discord-btn {
+    text-align: left;
+    margin-top: 0rem;
+  }
+
+
+  /* mail card */
+  #contact .contact-card-info .mail-card {
+    height: 200px;
+    width: 400px;
+    right: 1rem;
+    bottom: -1rem;
+    color: var(--primary-color);
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  #contact .contact-card-info .contact-fly-img {
+    position: absolute;
+    right: 10%;
+    top: -25%;
+  }
+
+
+}
