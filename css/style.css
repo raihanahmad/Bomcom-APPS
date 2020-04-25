@@ -41,6 +41,11 @@ a {
   font-weight: 700;
 }
 
+/********************************* SMARTPHONE ALERT *********************************/
+#smartphone {
+  display: none;
+}
+
 /* UTILITY CLASSES */
 .container {
   max-width: 1150px;
@@ -218,7 +223,7 @@ a {
 
 /******************************** GAMES SECTION ********************************/
 #games {
-  height: 80vh;
+  height: 600px;
   background: #f35526;
   box-shadow: 0 5px 1px #a7230c;
   position: relative;
@@ -239,7 +244,7 @@ a {
 /* GAMES CARD */
 .games-card {
   position: absolute;
-  top: 11rem;
+  top: 40%;
   left: 5rem;
   right: 5rem;
   height: 600px;
@@ -389,7 +394,7 @@ a {
 
 /********************************* AWARDS SECTION **********************************/
 #awards {
-  height: 155vh;
+  height: 1100px;
   background-color: var(--main-color);
   z-index: -1;
   margin-top: -5rem;
@@ -397,7 +402,7 @@ a {
 
 #awards .container {
   height: 100%;
-  padding-top: 30%;
+  padding-top: 35%;
 }
 
 #awards .container h2 {
@@ -517,7 +522,7 @@ a {
 #news {
   position: relative;
   z-index: 2;
-  height: 100vh;
+  height: 100%;
   background-color: var(--second-main-color);
   /* clip-path: polygon(0 calc(100% - 93vh), 100% 0, 100% 100%, 0 100%);
   margin-top: -7vh; */
@@ -529,7 +534,7 @@ a {
 
 #news .container {
   transform: skewY(1.5deg);
-  padding: 11% 9%;
+  padding: 13% 9% 8%;
   height: 100%;
 }
 
@@ -620,7 +625,7 @@ a {
   position: relative;
 }
 
-#news .news-flex .news-content-grid .top-news>div {
+#news .news-flex .news-content-grid .top-news > div {
   transform: rotateX(3deg) rotateY(-5deg) rotateZ(-2deg);
 }
 
@@ -684,10 +689,12 @@ a {
 
 /********************************** CONTACT SECTION **********************************/
 #contact {
-  height: 120vh;
-  background: linear-gradient(0deg,
-      var(--main-color),
-      var(--second-main-color));
+  height: 860px;
+  background: linear-gradient(
+    0deg,
+    var(--main-color),
+    var(--second-main-color)
+  );
 }
 
 #contact .container {
@@ -726,13 +733,13 @@ a {
   grid-template-columns: repeat(2, 1fr);
 }
 
-#contact .contact-card-info .discord-info>div .join-discord {
+#contact .contact-card-info .discord-info > div .join-discord {
   display: flex;
   /* justify-content: center; */
   align-items: center;
 }
 
-#contact .contact-card-info .discord-info>div .join-discord i {
+#contact .contact-card-info .discord-info > div .join-discord i {
   font-size: 6rem;
   margin-right: 3rem;
 }
@@ -781,7 +788,6 @@ a {
   justify-content: center;
 }
 
-
 #contact .contact-card-info .mail-card .btn {
   font-size: 1.5rem;
   height: 50px;
@@ -808,8 +814,7 @@ a {
   padding-left: 2rem;
   margin-right: 1.3rem;
   height: 55px;
-  transition: .3s;
-
+  transition: 0.3s;
 }
 
 #email::placeholder {
@@ -834,7 +839,9 @@ a {
 /********************************** FOOOTER SECTION **********************************/
 #footer {
   background: var(--main-color);
-  height: 25vh;
+  height: 100%;
+  margin-top: -1rem;
+  padding-bottom: 2rem;
 }
 
 #footer .container {
@@ -889,3 +896,32 @@ a {
   opacity: 1 !important;
   border-bottom: 3px solid #eee;
 }
+
+/* Ipad pro LANDSCAPMODE
+@media (max-width:1366px) and (max-height:1030px) {
+
+  #showcase {
+    margin-top: 20% !important;
+  }
+
+  #games {
+    height: 60vh;
+  }
+
+  #awards {
+    height: 100vh;
+  }
+
+  #news {
+    height: 63vh;
+  }
+
+  #contact {
+    height: 85vh;
+  }
+
+  #footer {
+    background: var(--main-color);
+    height: 18vh;
+  }
+} */
