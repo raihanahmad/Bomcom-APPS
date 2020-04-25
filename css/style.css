@@ -394,7 +394,7 @@ a {
 
 /********************************* AWARDS SECTION **********************************/
 #awards {
-  height: 1100px;
+  height: 1150px;
   background-color: var(--main-color);
   z-index: -1;
   margin-top: -5rem;
@@ -512,6 +512,7 @@ a {
 #awards .btn-reviews {
   margin-left: 43%;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 #awards .btn-reviews i {
@@ -625,7 +626,7 @@ a {
   position: relative;
 }
 
-#news .news-flex .news-content-grid .top-news > div {
+#news .news-flex .news-content-grid .top-news>div {
   transform: rotateX(3deg) rotateY(-5deg) rotateZ(-2deg);
 }
 
@@ -690,11 +691,9 @@ a {
 /********************************** CONTACT SECTION **********************************/
 #contact {
   height: 860px;
-  background: linear-gradient(
-    0deg,
-    var(--main-color),
-    var(--second-main-color)
-  );
+  background: linear-gradient(0deg,
+      var(--main-color),
+      var(--second-main-color));
 }
 
 #contact .container {
@@ -733,13 +732,13 @@ a {
   grid-template-columns: repeat(2, 1fr);
 }
 
-#contact .contact-card-info .discord-info > div .join-discord {
+#contact .contact-card-info .discord-info>div .join-discord {
   display: flex;
   /* justify-content: center; */
   align-items: center;
 }
 
-#contact .contact-card-info .discord-info > div .join-discord i {
+#contact .contact-card-info .discord-info>div .join-discord i {
   font-size: 6rem;
   margin-right: 3rem;
 }
