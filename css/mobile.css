@@ -25,8 +25,8 @@
 
 /* SHOWCASE */
 #showcase {
-  margin-top: 15%;
-  margin-left: 10%;
+  margin-top: -10rem;
+  margin-left: 6rem;
   margin-right: 30%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -58,13 +58,13 @@
 }
 
 /********************************* AWARDS SECTION **********************************/
+
 #awards {
-  height: 100%;
-  padding-bottom: 20%;
+  height: 1050px;
 }
 
 #awards .container {
-  padding-top: 40%;
+  padding-top: 23rem;
 }
 
 .reviews-content {
@@ -78,7 +78,7 @@
 
 #news .container {
   transform: skewY(1.5deg);
-  padding: 15% 9% 11%;
+  padding: 10rem 3rem 5rem;
   height: 100%;
 }
 
@@ -120,7 +120,7 @@
 
   /* SHOWCASE */
   #showcase {
-    margin-top: 10%;
+    margin-top: -7rem;
     margin-left: 5%;
     margin-right: 30%;
   }
@@ -294,7 +294,7 @@
 
   /* SHOWCASE */
   #showcase {
-    margin-top: 2%;
+    margin-top: 0;
     margin-left: 3%;
   }
 

@@ -194,8 +194,8 @@ a {
 
 /* SHOWCASE */
 #showcase {
-  margin-top: 4rem;
-  height: 100%;
+  /* margin-top: 4rem; */
+  height: 75vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -402,7 +402,7 @@ a {
 
 #awards .container {
   height: 100%;
-  padding-top: 35%;
+  padding-top: 29rem;
 }
 
 #awards .container h2 {
@@ -509,10 +509,15 @@ a {
   padding-right: 0.09rem;
 }
 
+#review-btn-div {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
 #awards .btn-reviews {
-  margin-left: 43%;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 3rem 0;
 }
 
 #awards .btn-reviews i {
@@ -535,7 +540,7 @@ a {
 
 #news .container {
   transform: skewY(1.5deg);
-  padding: 13% 9% 8%;
+  padding: 13rem 3rem 4rem;
   height: 100%;
 }
 
@@ -679,7 +684,7 @@ a {
 }
 
 #news .container .all-news-btn {
-  padding-top: 7%;
+  padding-top: 4rem;
   width: 100%;
   text-align: center;
 }
@@ -698,8 +703,11 @@ a {
 
 #contact .container {
   height: 100%;
-  padding-top: 15%;
+  /* padding-top: 15%; */
   perspective: 1000px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 /* down card just for shap */
