@@ -631,7 +631,7 @@ a {
   position: relative;
 }
 
-#news .news-flex .news-content-grid .top-news>div {
+#news .news-flex .news-content-grid .top-news > div {
   transform: rotateX(3deg) rotateY(-5deg) rotateZ(-2deg);
 }
 
@@ -696,9 +696,11 @@ a {
 /********************************** CONTACT SECTION **********************************/
 #contact {
   height: 860px;
-  background: linear-gradient(0deg,
-      var(--main-color),
-      var(--second-main-color));
+  background: linear-gradient(
+    0deg,
+    var(--main-color),
+    var(--second-main-color)
+  );
 }
 
 #contact .container {
@@ -740,13 +742,13 @@ a {
   grid-template-columns: repeat(2, 1fr);
 }
 
-#contact .contact-card-info .discord-info>div .join-discord {
+#contact .contact-card-info .discord-info > div .join-discord {
   display: flex;
   /* justify-content: center; */
   align-items: center;
 }
 
-#contact .contact-card-info .discord-info>div .join-discord i {
+#contact .contact-card-info .discord-info > div .join-discord i {
   font-size: 6rem;
   margin-right: 3rem;
 }
@@ -898,10 +900,16 @@ a {
   text-align: start;
 }
 
-#footer .footer-grid #creator a {
-  color: #ffffff;
+#footer p a {
+  color: #ffe678;
   opacity: 1 !important;
-  border-bottom: 3px solid #eee;
+  text-decoration: underline;
+}
+
+#footer p a:hover {
+  color: #f5c800;
+  opacity: 1 !important;
+  text-decoration: underline;
 }
 
 /* Ipad pro LANDSCAPMODE
