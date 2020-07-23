@@ -338,10 +338,4 @@
     max-width: 300px;
     padding: 0rem 2rem;
   }
-
-  #smartphone .not-yet {
-    font-size: .8rem;
-    font-weight: 800;
-    opacity: .6;
-  }
 }
